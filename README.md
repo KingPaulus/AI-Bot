@@ -14,7 +14,7 @@ Hier finden Sie zwei weitere Varianten, die auf dem ursprünglichen Projekt basi
 [Live2D Free Material License](https://www.live2d.jp/en/terms/live2d-free-material-license-agreement/)
 * **AI Language Model by OpenAI**
 [OpenAI Node License](https://github.com/openai/openai-node/blob/master/LICENSE)
-![AI VTuber Screenshot_01 ](img/Screenshot_001.png)
+![AI VTuber Screenshot_01 ](img/Screenshot_001_Intro.png)
 <br><br><br><br>
 
 ### Accounts
@@ -47,14 +47,14 @@ NPM ermöglicht Entwicklern, JavaScript-Pakete einfach zu installieren, zu aktua
 ### VTube Studio API
 VTube Studio ist eine benutzerfreundliche Software, die es Content-Erstellern ermöglicht, ihre virtuellen Charaktere in Echtzeit zu steuern und zu animieren, indem sie Gesichtserkennungstechnologie und Bewegungsverfolgung nutzt, um eine interaktive und immersive Streaming-Erfahrung zu schaffen.<br>
 
-Ich verwende das [VTS Desktop Audio Plugin by Lua Lucky](https://lualucky.itch.io/vts-desktop-audio-plugin), um den Ton zu erfassen und ihn als Parameter zu senden, damit sich die Seiten des Charakters bewegen können." <br>
+Ich verwende das [VTS Desktop Audio Plugin by Lua Lucky (Windows Only)](https://lualucky.itch.io/vts-desktop-audio-plugin), um den Ton zu erfassen und ihn als Parameter zu senden, damit sich die Seiten des Charakters bewegen können." <br>
 
-Plugins list unter: <br>
+Vtube Studio mit Plugins<br>
 [VTubeStudio (Github)](https://github.com/DenchiSoft/VTubeStudio)
 
-[VTS Desktop Audio Plugin](https://lualucky.itch.io/vts-desktop-audio-plugin)
-![AI VTuber Screenshot_02](img/Screenshot 2023-01-23 165939.png)
+![AI VTuber Screenshot_02](img/Screenshot_002_Dashboard.png)
 <br><br><br><br>
 
+![Starten Icon](img/Starten_Docu.png)
 ## Starten
 Wenn schließlich alles wie erwartet verläuft, sollten Sie nun in der Lage sein, `node main.js` erfolgreich auszuführen.

@@ -1,6 +1,16 @@
 # Git Ignore
 
+# Ignoriere den Ordner 'node_modules'
+node_modules/
+
+# Ignoriere den Ordner 'dist'
+dist/
+
+# Ignoriere den Ordner 'logs'
+logs/
+
 # Ignoriere die Package.json, diese muss erstellt werden durch die Konsole
 package.json
+
 # Ignoriere alle .DS_Store Dateien
 *.DS_Store

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ponlponl123/-Prototype-AIVTuber/issues"
   },
-  "homepage": "https://github.com/ponlponl123/-Prototype-AIVTuber#readme"
+  "homepage": "https://github.com/ponlponl123/-Prototype-AIVTuber#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
