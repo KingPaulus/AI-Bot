@@ -26,17 +26,23 @@ Um die Anwendung korrekt zu konfigurieren, müssen Sie Ihre API-Schlüssel in de
 
 # Installation
 
-1.  Clone the repository or download the code and extract it to a directory of your choice.
-2.  Open a terminal or command prompt in the directory where the code is located.
-3.  Run the following command to install the required packages:
+1.  Klonen Sie das Repository oder laden Sie den Code herunter und extrahieren Sie ihn in ein Verzeichnis Ihrer Wahl.
+2.  Öffnen Sie ein Terminal oder eine Eingabeaufforderung in dem Verzeichnis, in dem sich der Code befindet.
+3.  Führen Sie den folgenden Befehl aus, um die erforderlichen Pakete zu installieren:
 
 bash
 
-    `npm install` 
+    `npm install`
 
-# Configuration
+Installiere dazu ffmpeg (falls noch nicht vorhaben) mit HomeBrew:
 
-Before running the application, you will need to configure the following variables in the code:
+    `brew install wget`
+    `brew install ffmpeg`
+    `witch ffmpeg`
+
+# Konfiguration
+
+Bevor Sie die Anwendung ausführen, müssen Sie die folgenden Variablen im Code konfigurieren:
 
 -   `ffmpeg_path`: Path to the FFmpeg executable on your system.
 -   `openai_apiKey`: Your OpenAI API key.
@@ -47,9 +53,10 @@ Before running the application, you will need to configure the following variabl
 -   `client.identity.password`: Your Twitch bot's OAuth token.
 -   `client.channels`: An array of the Twitch channels where you want your bot to operate.
 
-# Running the Application
+# Ausführen der Anwendung
 
-To run the application, open a terminal or command prompt in the directory where the code is located and run the following command:
+Um die Anwendung auszuführen, öffnen Sie ein Terminal oder eine Eingabeaufforderung in dem Verzeichnis, in dem sich der Code befindet, und führen Sie den folgenden Befehl aus:
+
 
 bash
 
