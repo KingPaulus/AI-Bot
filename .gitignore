@@ -9,6 +9,9 @@ dist/
 # Ignoriere den Ordner 'logs'
 logs/
 
+# Ignoriere den Ordner 'node_modules'
+.idea/
+
 # Ignoriere die Package.json, diese muss erstellt werden durch die Konsole
 package.json
 
