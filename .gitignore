@@ -15,5 +15,8 @@ logs/
 # Ignoriere die Package.json, diese muss erstellt werden durch die Konsole
 package.json
 
+# Ignoriere die .env Datei
+.env
+
 # Ignoriere alle .DS_Store Dateien
 *.DS_Store
