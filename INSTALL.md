@@ -26,19 +26,19 @@ Um die Anwendung korrekt zu konfigurieren, müssen Sie Ihre API-Schlüssel in de
 
 # Installation
 
-1.  Klonen Sie das Repository oder laden Sie den Code herunter und extrahieren Sie ihn in ein Verzeichnis Ihrer Wahl.
-2.  Öffnen Sie ein Terminal oder eine Eingabeaufforderung in dem Verzeichnis, in dem sich der Code befindet.
-3.  Führen Sie den folgenden Befehl aus, um die erforderlichen Pakete zu installieren:
+bash<br>
+1. git clone ```git clone <Link>``` <br>
+2. cd ins Verzeichnis ```cd elizabeth_ai``` <br>
+3. Nutzte die NPM version mit ```nvm use```
+3. Erstelle die .env datei ```mv .env.example .env ```
+`npm install` <br><br>
+falls du probleme haben solltest damit probiere: <br>
+`npm init -y` <br>
 
-bash
-
-    `npm install`
-
-Installiere dazu ffmpeg (falls noch nicht vorhaben) mit HomeBrew:
-
-    `brew install wget`
-    `brew install ffmpeg`
-    `witch ffmpeg`
+Installiere dazu ffmpeg (falls noch nicht vorhaben) mit HomeBrew:<br>
+`brew install wget` <br>
+`brew install ffmpeg` <br>
+`witch ffmpeg` <br>
 
 # Konfiguration
 

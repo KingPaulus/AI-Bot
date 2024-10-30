@@ -1,5 +1,5 @@
 
-require('dotenv').config();
+require('dotenv').config({ path: '../.env' });
 const voice = require('elevenlabs-node');
 const express = require('express');
 const http = require('http');
@@ -9,15 +9,20 @@ const tmi = require('tmi.js');
 const Speaker = require('speaker');
 const wav = require('wav');
 
-var ffmpeg_path = '/opt/homebrew/bin/ffmpeg'; // like this: c:/ffmpeg/bin/ffmpeg.exe
+var ffmpeg_path = process.env.FFMPEG_PATH; // like this: c:/ffmpeg/bin/ffmpeg.exe
 var openai_apiKey = process.env.OPENAI_API_KEY;
-const elapiKey = 'API_KEY'; // Your API key from Elevenlabs
-const voiceID = '21m00Tcm4TlvDq8ikWAM'; // The ID of the voice you want to get
+const elapiKey = process.env.ELEVENLABS_API_KEY // Your API key from Elevenlabs
+const voiceID = process.env.ELEVENLABS_VOICE_ID; // The ID of the voice you want to genarte
+
+const twitch_username= process.env.TWITCH_USERNAME;
+const twitch_password= process.env.TWITCH_PASSWORD;
+const twitch_channels= process.env.TWITCH_CHANNELS;
+// t
 const fileName = 'path/to/output.mp3'; // The name of your audio file
 var stability = 1.00 // do not mess with these values they are set to give human like speech
 var similarityBoost = 0.70
-const host = 'localhost';
-const port = 8000;
+const host = process.env.APP_HOST;
+const port = process.env.APP_PORT;
 const app = express();
 const server = http.createServer(app);
 const { Server } = require("socket.io");
@@ -81,10 +86,10 @@ const client = new tmi.Client({
     options: { debug: true },
     connection: { reconnect: true },
     identity: {
-        username: 'bot_name',
-        password: 'bot_token'
+        username: twitch_username,
+        password: twitch_password
     },
-    channels: [ 'channel_name' ]
+    channels: [ twitch_channels ]
 });
 client.connect().catch((error) => {
     console.error(error);
