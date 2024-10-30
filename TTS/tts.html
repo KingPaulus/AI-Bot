@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        /* custom fonts */
+        *{
+            font-family: 'Fredoka One', cursive;
+        }
+        html{
+            font-family: 'Fredoka One', cursive;
+        }
+        body{
+            font-family: 'Fredoka One', cursive;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            max-width: 100vw;
+            overflow: hidden;
+            background-color: #333333;
+            color: white;
+
+        }
+        p{
+            font-size: clamp(16px,2.5vw,75px);
+            
+            width: 100vw;
+            max-width: 1280px;
+            height: auto;
+            white-space: break-spaces;
+            text-align: center;
+            padding-bottom: 25px;
+            box-sizing: border-box;
+        }
+        .buttons-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        button {
+            margin: 0 10px;
+            font-size: clamp(16px,2.5vw,75px);
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            padding: 10px 20px;
+            cursor: pointer;
+           
+        }
+        hr {
+            border: 1px solid #f9f9f9;
+            width: 90%;
+            margin-top: 25px;
+        }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <hr>
+    <div class="buttons-container">
+        <button id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+        <button id="button3">Button 3</button>
+    </div>
+    <div class="buttons-container">
+        <button id="button4">Button 4</button>
+        <button id="button5">Button 5</button>
+        <button id="button6">Button 6</button>
+    </div>
+    <script>
+        var socket = io();
+    </script>
+    <script>
+        socket.on('TTS', (att) => {
+            document.querySelector("p").innerHTML = att.subtitle;
+        });
+    </script>
+  </body>
+</html>
+
+
+
