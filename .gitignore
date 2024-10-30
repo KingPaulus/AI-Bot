@@ -1,0 +1,6 @@
+# Git Ignore
+
+# Ignoriere die Package.json, diese muss erstellt werden durch die Konsole
+package.json
+# Ignoriere alle .DS_Store Dateien
+*.DS_Store
